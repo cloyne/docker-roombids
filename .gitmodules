@@ -1,0 +1,3 @@
+[submodule "plugins/wp-mailfrom-ii"]
+	path = plugins/wp-mailfrom-ii
+	url = https://github.com/benhuson/wp-mailfrom.git
