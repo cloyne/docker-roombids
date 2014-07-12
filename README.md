@@ -34,4 +34,4 @@ git submodule add https://github.com/benhuson/wp-mailfrom.git plugins/wp-mailfro
 Theme
 -----
 
-Most changes you will do by modifying theme. Simply modify necessary PHP or CSS files and this is it. Have in mind that sometimes it is better to create a placeholder in th template which can later on be filled through Wordpress web admin interface instead of hard-coding the code change you want.
+Most changes you will do by modifying theme. Simply modify necessary PHP or CSS files and this is it. Have in mind that sometimes it is better to create a placeholder in the template which can later on be filled through Wordpress web admin interface instead of hard-coding the code change you want.
