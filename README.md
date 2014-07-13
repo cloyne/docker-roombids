@@ -18,7 +18,7 @@ Download Docker images:
 * `docker pull cloyne/mysql-dev`
 * `docker pull cloyne/blog`
 
-Run them from a clone of this repository using `./development.sh` script. This will create two Docker containers, one for MySQL database, another for Cloyne blog. You should see them running through `docker ps`. Open IP as returned by `boot2docker ip`, or open `127.0.0.1` on Linux, in your browser and you should see Wordpress installation wizard. Initially database is empty and you have to configure your local version of Cloyne blog. Probably you should configure it similar to deployed Cloyne blog is so that you can test things.
+Run them from a clone of this repository using `./development.sh` script. This will create two Docker containers, one for MySQL database, another for Cloyne blog. You should see them running through `docker ps`. Wait for around 10 seconds for all internal container processes to start correctly and open IP as returned by `boot2docker ip`, or open `127.0.0.1` on Linux, in your browser and you should see Wordpress installation wizard. Initially database is empty and you have to configure your local version of Cloyne blog. Probably you should configure it similar to deployed Cloyne blog is so that you can test things.
 
 Script runs Cloyne blog in a way that it maps `plugins` and `themes` directories directly into the container. This means you can just work directly on them and just reload in the browser. Once you are satisfied with your changes, you commit and push to GitHub.
 
