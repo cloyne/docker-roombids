@@ -841,6 +841,13 @@ img.wp-smiley,
 	margin: 0;
 }
 
+.site-header .bsc-link {
+	position: absolute;
+	top: 58px;
+	right: 20px;
+	font-size: 20px;
+}
+
 
 /**
  * 4.2 Navigation

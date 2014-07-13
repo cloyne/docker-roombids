@@ -38,6 +38,10 @@
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</a>
 
+			<div class="bsc-link">
+				A <a href="http://bsc.coop/" title="Berkeley Student Cooperative">Berkeley Student Cooperative</a> house
+			</div>
+
 			<div id="navbar" class="navbar">
 				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
 					<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
