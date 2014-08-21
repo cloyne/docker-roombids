@@ -1,3 +1,6 @@
 [submodule "plugins/wp-mailfrom-ii"]
 	path = plugins/wp-mailfrom-ii
 	url = https://github.com/benhuson/wp-mailfrom.git
+[submodule "plugins/events-manager"]
+	path = plugins/events-manager
+	url = https://github.com/wp-plugins/events-manager.git
