@@ -4,3 +4,6 @@
 [submodule "plugins/events-manager"]
 	path = plugins/events-manager
 	url = https://github.com/wp-plugins/events-manager.git
+[submodule "plugins/wp-fullcalendar"]
+	path = plugins/wp-fullcalendar
+	url = https://github.com/cloyne/wp-fullcalendar.git
