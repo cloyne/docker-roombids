@@ -846,6 +846,11 @@ img.wp-smiley,
 	top: 58px;
 	right: 20px;
 	font-size: 20px;
+	color: #FFE41C;
+}
+
+.site-header .bsc-link a {
+	color: #EA9629;
 }
 
 
@@ -1872,6 +1877,11 @@ footer.entry-meta {
 .attachment .entry-content .mejs-container {
 	margin-bottom: 24px;
 }
+
+.em-search-wrapper {
+	display: none;
+}
+
 
 /**
  * 5.7 Post/Paging Navigation
