@@ -2584,9 +2584,7 @@ footer.entry-meta {
 }
 
 .sidebar .site-footer .widget-area {
-	max-width: 724px;
 	position: relative;
-	left: -158px;
 }
 
 .site-footer .widget {
@@ -2599,6 +2597,10 @@ footer.entry-meta {
 
 .sidebar .site-footer .widget {
 	width: 228px;
+}
+
+.sidebar .site-footer .site-info .widget {
+	width: auto;
 }
 
 .sidebar .site-footer .widget:nth-of-type(4),
