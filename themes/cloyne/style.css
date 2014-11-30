@@ -3,10 +3,9 @@ Theme Name: Cloyne
 Author: Cloyne
 Author URI: http://cloyne.org/
 Description: Based on Twenty Thirteen theme from Wordpress.
-Version: 1.0
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: twentythirteen
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -981,7 +980,7 @@ ul.nav-menu .focus > ul,
 	position: relative;
 	-webkit-transition: width 400ms ease, background 400ms ease;
 	transition:         width 400ms ease, background 400ms ease;
-	width: 0;
+	width: 1px;
 }
 
 .site-header .search-field:focus {
@@ -2834,6 +2833,13 @@ footer.entry-meta {
 
 /* Collapse oversized image and pulled images after iPad breakpoint. */
 @media (max-width: 767px) {
+	.site-header .home-link {
+		min-height: 0;
+	}
+	.site-title {
+		font-size: 36px;
+		padding: 8px 0 10px;
+	}
 	.entry-content img.alignleft,
 	.entry-content .wp-caption.alignleft {
 		margin-left: 0;
@@ -2892,7 +2898,20 @@ footer.entry-meta {
 		display: inline-block;
 		font: bold 16px/1.3 "Source Sans Pro", Helvetica, sans-serif;
 		margin: 0;
+	}
+
+	.menu-toggle,
+	.menu-toggle:hover,
+	.menu-toggle:focus,
+	.menu-toggle:active {
+		background: none;
+		border: none;
+		color: #141412;
 		padding: 12px 0 12px 20px;
+	}
+
+	.menu-toggle:focus {
+		outline: thin dotted;
 	}
 
 	.menu-toggle:after {
@@ -2941,9 +2960,15 @@ footer.entry-meta {
 		color: #141412;
 	}
 
-	.toggled-on .nav-menu li a:hover,
-	.toggled-on .nav-menu ul a:hover {
+	.toggled-on .nav-menu > li a:hover,
+	.toggled-on .nav-menu > ul a:hover {
 		background-color: #db572f;
+		color: #fff;
+	}
+
+	.toggled-on .nav-menu > li a:focus,
+	.toggled-on .nav-menu > ul a:focus {
+		background-color: #220e10;
 		color: #fff;
 	}
 
@@ -3031,6 +3056,13 @@ footer.entry-meta {
 
 /* Mobile devices */
 @media (max-width: 359px) {
+	.site-title {
+		font-weight: normal;
+	}
+	.site-description {
+	    clip: rect(1px, 1px, 1px, 1px);
+	    position: absolute;
+	}
 	.gallery {
 		margin-left: 0;
 	}
