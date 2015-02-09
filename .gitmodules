@@ -7,3 +7,6 @@
 [submodule "plugins/wp-fullcalendar"]
 	path = plugins/wp-fullcalendar
 	url = https://github.com/cloyne/wp-fullcalendar.git
+[submodule "plugins/import-users-from-csv"]
+	path = plugins/import-users-from-csv
+	url = https://github.com/sorich87/import-users-from-csv.git
