@@ -9,8 +9,16 @@
 import re
 import fileinput
 
-print 'user_login,user_email,role'
+print 'user_login,user_email,display_name,role'
 
 for line in fileinput.input():
     line = line.strip()
-    print '%s,%s,author' % (line.split('@')[0], line)
+    split_line = line.split(' ', 1)
+    if len(split_line) > 1:
+        address = split_line[0]
+        name = split_line[1]
+    else:
+        address = split_line[0]
+        name = ''
+
+    print '%s,%s,%s,author' % (address.split('@')[0], address, name)
