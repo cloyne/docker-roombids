@@ -3,7 +3,7 @@ Theme Name: Cloyne
 Author: Cloyne
 Author URI: http://cloyne.org/
 Description: Based on Twenty Thirteen theme from Wordpress.
-Version: 1.2
+Version: 1.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -536,7 +536,10 @@ hr {
 /* Assistive text */
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
 	position: absolute !important;
+	height: 1px;
+	width: 1px;
 }
 
 .screen-reader-text:focus {
