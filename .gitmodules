@@ -12,4 +12,4 @@
 	url = https://github.com/sorich87/import-users-from-csv.git
 [submodule "plugins/bulk-delete"]
 	path = plugins/bulk-delete
-	url = https://github.com/sudar/bulk-delete
+	url = https://github.com/sudar/bulk-delete.git
