@@ -10,3 +10,6 @@
 [submodule "plugins/import-users-from-csv"]
 	path = plugins/import-users-from-csv
 	url = https://github.com/sorich87/import-users-from-csv.git
+[submodule "plugins/bulk-delete"]
+	path = plugins/bulk-delete
+	url = https://github.com/sudar/bulk-delete
