@@ -6,7 +6,8 @@ http://cloyne.org/
 Development
 -----------
 
-For development, you have to install [Docker](https://docs.docker.com/).
+For development, you have to install [Docker](https://docs.docker.com/) and
+[docker-compose](https://docs.docker.com/compose/install/).
 
 On Mac OS X you have to use boot2docker with [alternative ISO image](https://medium.com/boot2docker-lightweight-linux-for-docker/boot2docker-together-with-virtualbox-guest-additions-da1e3ab2465c). In short, you:
 * run `boot2docker down`
@@ -14,11 +15,7 @@ On Mac OS X you have to use boot2docker with [alternative ISO image](https://med
 * run `VBoxManage sharedfolder add boot2docker-vm -name home -hostpath /Users`
 * run `boot2docker up`
 
-Download Docker images:
-* `docker pull cloyne/mysql-dev`
-* `docker pull cloyne/blog`
-
-Run them from a clone of this repository using `./development.sh` script. This
+Clone this repository and run `docker-compose up -d` to run it locally. This
 will create two Docker containers, one for MySQL database, another for Cloyne
 blog. You should see them running through `docker ps`. Wait for around 10
 seconds for all internal container processes to start correctly and open IP as

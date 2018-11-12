@@ -1,0 +1,22 @@
+version: '3.2'
+services:
+  mysql:
+    image: cloyne/mysql-dev
+    container_name: mysql
+    volumes:
+      - ./development/db:/var/lib/mysql
+      - ./development/log/mysql:/var/log/mysql
+
+  blog:
+    build: .
+    depends_on:
+        - mysql
+    container_name: blog
+    ports:
+      - "80:80"
+    volumes:
+      - ./development/etc/wordpress:/etc/wordpress
+      - ./development/etc/service/nginx/run.initialization:/etc/service/nginx/run.initialization
+      - ./plugins:/wordpress/wp-content/plugins
+      - ./themes:/wordpress/wp-content/themes
+      - ./development/log/nginx:/var/log/nginx
