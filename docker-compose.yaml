@@ -1,8 +1,8 @@
 version: '3.2'
 services:
-  mysql:
+  mysql-roombids:
     image: cloyne/mysql-dev
-    container_name: mysql
+    container_name: mysql-roombids
     volumes:
       - ./development/db:/var/lib/mysql
       - ./development/log/mysql:/var/log/mysql
@@ -10,8 +10,8 @@ services:
   blog:
     build: .
     depends_on:
-        - mysql
-    container_name: blog
+        - mysql-roombids
+    container_name: roombids
     ports:
       - "80:80"
     volumes:

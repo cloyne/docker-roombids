@@ -1,4 +1,4 @@
-FROM cloyne/wordpress
+FROM cloyne/wordpress:php-7.2
 
 MAINTAINER Mitar <mitar.docker@tnode.com>
 
